@@ -1,0 +1,580 @@
+html {
+  scroll-behavior: smooth;
+  font-family: monospace;
+}
+.body{
+	background-color: black;
+	margin: 0;	
+	color: white;
+	z-index: 0;
+	scroll-behavior: smooth;
+}
+
+p,h1,h2,h3,h4{
+	color: white;
+}
+
+#profile-name{
+	margin: 16px auto; 
+	font-size: 2.5vw;
+}
+
+
+header{
+	width: 100%;
+	display: flex;
+	text-align: center;
+}
+
+button{
+	background-color: black;
+	height: 100px;
+	width: 100px;
+	border:none;
+}
+
+.menu-left{		 		
+	text-align: center;
+	float: left;	
+	border-right: 1px solid white;	
+}
+.menu-center{
+	display: inline-block;
+	height: 100%;
+	font-family: system-ui;	
+	width: calc(100vw - 223px);	
+}
+.menu-right{		
+	text-align: center;
+	float: right;
+	border-left: 1px solid white;	
+	top:0;
+}
+#menu-button svg:hover path{
+	fill: white;
+}
+
+.navbar{
+	border: 1px solid white;
+	width: 100%;
+}
+
+.menu{
+	display: block;
+	list-style: none;
+	border: 1px solid white;
+	border-left: 0;
+	border-right: 0;
+	margin: 0;
+	text-align: center;
+}
+.menu > li{
+	display: inline-block;
+	font-size: 1.3em;
+	margin: 15px;
+	margin-left: 20px;
+	margin-right: 20px;
+	
+}
+a{
+	text-decoration: none;
+	color: #9E9E9E;;
+}
+.active, a:hover{
+	color: white;
+}
+#menu-pop{
+	z-index: 100;
+	background-color: black;
+	width: 100%;
+	height: 100%;
+	position: fixed;
+	inset: 0;
+	transform: translateY(-100vh);
+	transition: all .3s ease-in-out
+	
+}
+#menu-pop-list{
+	list-style: none;
+	display: block;
+	text-align: center;
+	width: 100%;		
+	padding: 0;
+	font-size: 10px;
+
+}
+#menu-pop-list > li{
+	margin-top: 25px;
+	margin-bottom: 25px;
+	width: 100%;
+	font-size: 6em;
+}
+#menu-pop-list > li:hover{
+	background-color: white;
+}
+#menu-pop-list > li > a,  {
+	color: white;
+}
+#menu-pop-list > li:hover a{
+	color: black;
+}
+.list-active {
+	background-color: white;
+}
+.list-font-active{
+	color: black;
+}
+
+#menu-body{
+	display: flex;
+	height: 100%;
+	width: 100vw;
+	align-items: center;
+	justify-content: center;
+
+}
+
+.ukuranhuruf{
+	font-size: 2.2em;
+}
+
+.papan-landing{
+	padding: 0 1em;
+	height: 65vh;
+	align-items: center;
+	justify-content: center;
+	display: flex;
+
+}
+.landing-text{
+    display: block;
+    text-rendering: optimizelegibility;
+    text-align: center;
+    line-height: 1.5;
+    text-indent: 0;
+    margin: 0;
+    font-size: 5vw;
+    margin-left: 10%;
+    margin-right: 10%;
+}
+
+#close{
+	color: white;
+	font-size: 50px;
+}
+#close:hover {
+	background-color: white;
+	color: black;
+}
+.anime{
+	transform: translateY(0) !important;
+}
+
+.companies{
+	display: flex;
+	flex-wrap: wrap;
+	align-items: center;
+	justify-content: center;
+}
+.contactus{
+	padding: 10vw; 
+	margin: auto;
+	text-align: center;
+}
+.profilku{
+	width: 60%;
+}
+
+.porto{
+	max-width: 220px;
+	max-height: 100px;
+}
+
+.listcomp{
+	display: flex;
+	height: 90px;
+	line-height: 90px;
+	vertical-align: middle;
+	min-width: 200px;
+	justify-content: center;
+	align-items: center;
+}
+
+.peoples{
+    display: inline-block;
+    position: relative;
+    width: 100%;
+    text-align: center;
+    margin-bottom: 10vw;
+
+}
+
+.pleft{
+	flex: 0 0 66%;
+	position: relative
+}
+
+.hand-rock {
+	/*animation: rock-on 1.25s ease-out backwards;
+	animation-iteration-count:infinite;*/
+}
+
+.notes {
+	/*animation: note 1.25s ease-out backwards;
+	animation-iteration-count:infinite;
+*/	}
+
+.notes{
+	fill: transparent;
+	stroke: #FFFFFF;
+	stroke-width: 3px;
+	stroke-linecap: round;
+	stroke-linejoin: round;
+}
+
+.hand-rock {
+	fill: #fff;
+	stroke: #000;
+	stroke-width: 3px;
+	stroke-linecap: round;
+	stroke-linejoin: round;
+}
+
+@keyframes rock-on {
+	0% {
+		transform: scale(1);
+	}
+	25% {
+		transform: scale(1.1);
+	}
+	50% {
+		transform: scale(1);
+	}
+	75% {
+		transform: scale(1.1);
+	}
+}
+
+@keyframes note {
+	0% {
+		transform: scale(0) rotateZ(0deg);
+		opacity: 0;
+	}
+	20% {
+		transform: scale(1.1) rotateZ(10deg);
+	}
+	40% {
+		transform: scale(0.9) rotateZ(-10deg);
+	}
+	50% {
+		opacity: .75;
+	}
+	60% {
+		transform: scale(1.1) rotateZ(10deg);
+	}
+	80% {
+		transform: scale(0.9) rotateZ(-10deg);
+	}
+}
+
+@keyframes blink {
+   from {
+      opacity: 1;
+   }
+   to {
+      opacity: 0;
+   }
+ }
+
+ #blinking{
+	animation-duration: 400ms;
+    animation-name: blink;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+ }
+
+.footer{
+	display: flex;
+	flex: 1 1;
+}
+
+
+
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+#profile-name{
+	margin: 15px auto; 
+	font-size: 25px;
+	flex: wrap-text;
+}
+.menu-left{		 		
+		text-align: center;
+	float: left;	
+	border-right: 1px solid;	
+	border-top: 1px solid;
+}
+.menu-center{
+	display: inline-block;
+	height: 100%;
+	font-family: system-ui;
+}
+.menu-right{		
+		text-align: center;
+	float: right;
+	border-top: 1px solid white;
+
+}
+#menu-button svg:hover path{
+	fill: white;
+}
+
+button{
+	background-color: black;
+	height: 100px;
+	width: 100px;
+	border:none;
+}
+
+#submenu{
+	display: none;
+}
+.main-body{
+	min-height: 100vh;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0px;
+	margin: 0px;
+}
+
+.papan-landing{
+	padding: 0 1em;
+	height:70vh;
+	display: flex;
+
+}
+
+#desktop{
+	display: none;
+}
+.menu{
+	display: block;
+	list-style: none;
+	border: 1px solid white;
+	border-left: 0;
+	border-right: 0;
+	margin: 0;
+	text-align: center;
+}
+
+.landing-text{
+    display: block;
+    text-rendering: optimizelegibility;
+    text-align: center;
+    line-height: 1.5;
+    text-indent: 0;
+    margin: 0;
+    font-size: 8vw;
+    margin-left: 10%;
+    margin-right: 10%;
+}
+
+#sitemap{
+	display: none;
+}
+
+#colophon{
+	display: none;
+}
+
+#connect{
+	width: 100% !important;
+}
+
+.profilku{
+	width: 80%;
+}
+
+.ukuranhuruf{
+	font-size: 1.2em;
+}
+
+#saya{
+	display: none !important;
+}
+.porto{
+	max-width: 220px;
+	max-height: 80px;
+}
+
+
+
+
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+	#profile-name{
+		margin: 15px auto; 
+		font-size: 45px;
+	}
+	.menu-left{		 		
+  		text-align: center;
+		float: left;	
+		border-right: 1px solid;	
+	}
+	.menu-center{
+		display: inline-block;
+		height: 100%;
+		font-family: system-ui;
+	}
+	.menu-right{		
+  		text-align: center;
+		float: right;
+		border-left: 1px solid
+	}
+	#menu-button svg:hover path{
+		fill: white;
+	}
+
+	button{
+		background-color: black;
+		height: 100px;
+		width: 100px;
+		border:none;
+	}
+
+	.main-body{
+		min-height: 100vh;
+	    flex: 1;
+	    display: flex;
+	    flex-direction: column;
+	    justify-content: center;
+	    align-items: center;
+	    padding: 0px;
+		margin: 0px;
+	}
+
+	.landing-text{
+	    display: block;
+	    text-rendering: optimizelegibility;
+	    text-align: center;
+	    line-height: 1.5;
+	    text-indent: 0;
+	    margin: 0;
+	    font-size: 6vw;
+	    margin-left: 10%;
+	    margin-right: 10%;
+	}
+	#desktop{
+		display: none;
+	}
+	.profilku{
+		width: 80%;
+	}
+	.ukuranhuruf{
+		font-size: 1.3em;
+	}
+	#saya{
+		display: none !important;
+	}
+
+	.porto{
+		max-width: 220px;
+		max-height: 80px;
+	}
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+	#profile-name{
+		margin: 10px auto; 
+		font-size: 50px;
+	}
+
+	.landing-text{
+	    display: block;
+	    text-rendering: optimizelegibility;
+	    text-align: center;
+	    line-height: 1.5;
+	    text-indent: 0;
+	    margin: 0;
+	    font-size: 4vw;
+	    margin-left: 10%;
+	    margin-right: 10%;
+	}
+
+	#mobile{
+		display: none;
+	}
+
+ 
+	#desktop{
+		display: inline-block;
+	}
+
+	.ukuranhuruf{
+		font-size: 1.7em;
+	}
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+	#profile-name{
+		margin: 5px auto; 
+		font-size: 55px;
+	}
+	.landing-text{
+	    display: block;
+	    text-rendering: optimizelegibility;
+	    text-align: center;
+	    line-height: 1.5;
+	    text-indent: 0;
+	    margin: 0;
+	    font-size: 4vw;
+	    margin-left: 10%;
+	    margin-right: 10%;
+	}
+
+	.ukuranhuruf{
+		font-size: 2em;
+	}
+
+	#mobile{
+		display: none;
+	}
+
+ 
+	#desktop{
+		display: inline-block;
+	}
+
+	#saya{
+		display: flex !important;
+	}
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+
+	#saya{
+		display: flex !important;
+	}
+
+	#mobile{
+		display: none;
+	}
+
+ 
+	#desktop{
+		display: inline-block;
+	}
+
+	.ukuranhuruf{
+		font-size: 2.2em;
+		line-height: 50px !important;
+	}
+}

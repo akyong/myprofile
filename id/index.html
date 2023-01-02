@@ -1,0 +1,221 @@
+
+<html>
+<head><meta charset="utf-8">
+	<title>Bobby Akyong</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="apple-touch-icon" sizes="57x57" href="../apple-icon-57x57.png">
+	<link rel="apple-touch-icon" sizes="60x60" href="../apple-icon-60x60.png">
+	<link rel="apple-touch-icon" sizes="72x72" href="../apple-icon-72x72.png">
+	<link rel="apple-touch-icon" sizes="76x76" href="../apple-icon-76x76.png">
+	<link rel="apple-touch-icon" sizes="114x114" href="../apple-icon-114x114.png">
+	<link rel="apple-touch-icon" sizes="120x120" href="../apple-icon-120x120.png">
+	<link rel="apple-touch-icon" sizes="144x144" href="../apple-icon-144x144.png">
+	<link rel="apple-touch-icon" sizes="152x152" href="../apple-icon-152x152.png">
+	<link rel="apple-touch-icon" sizes="180x180" href="../apple-icon-180x180.png">
+	<link rel="icon" type="image/png" sizes="192x192"  href="../android-icon-192x192.png">
+	<link rel="icon" type="image/png" sizes="32x32" href="../favicon-32x32.png">
+	<link rel="icon" type="image/png" sizes="96x96" href="../favicon-96x96.png">
+	<link rel="icon" type="image/png" sizes="16x16" href="../favicon-16x16.png">
+	<link rel="manifest" href="../manifest.json">
+	<meta name="msapplication-TileColor" content="#ffffff">
+	<meta name="msapplication-TileImage" content="../ms-icon-144x144.png">
+	<meta name="theme-color" content="#ffffff">
+	<link rel="stylesheet" href="../style.css">
+	
+</head>
+<body class="body">
+	<header>
+		<div class="navbar">
+			<div class="menu-left">
+				<button id="menu-button" onclick="toggleMenu()">
+					<svg aria-label="Open Menu" fill="none" height="31" width="33" xmlns="http://www.w3.org/2000/svg">
+						<path d="M8 12h18v-2H8v2Zm0-5h18V5H8v2Zm0-7v2h18V0H8ZM2.79 21.469l2.46 6.539 2.455-6.54h1.916V30H8.145v-2.813l.146-3.761L5.771 30h-1.06l-2.514-6.568.147 3.756V30H.867v-8.531H2.79Zm13.575 4.722h-3.504v2.625h4.096V30h-5.578v-8.531h5.537v1.195h-4.055v2.355h3.504v1.172ZM24.932 30h-1.483l-3.803-6.053V30h-1.482v-8.531h1.482l3.815 6.076v-6.076h1.47V30Zm7.992-8.531v5.7c0 .907-.291 1.626-.873 2.157-.578.527-1.35.791-2.315.791-.976 0-1.752-.26-2.326-.78-.574-.523-.861-1.247-.861-2.173V21.47h1.476v5.707c0 .57.145 1.006.434 1.306.289.301.715.452 1.277.452 1.141 0 1.711-.602 1.711-1.805v-5.66h1.477Z" fill="#9E9E9E">
+						</path>
+					</svg>
+				</button>
+			</div>
+
+			<div class="menu-center">
+				<h1 class="hand-rock" id="profile-name">BOBBY AKYONG</h1>
+			</div>
+
+			<div class="menu-right" id="menu-right">
+				<button id="rockicon" onclick="rockonbaby()"><!-- Rock On Icon -->
+					<svg id="Rock_on" viewbox="0 0 200 200" xmlns="http://www.w3.org/2000/svg"> 
+						<path class="hand-rock" d="M161.926,68.25c0-5.109-4.141-9.25-9.25-9.25s-9.25,4.141-9.25,9.25v27l-29.475-4.969V59.736c0-5.109-4.141-9.25-9.25-9.25h0c-5.109,0-9.25,4.141-9.25,9.25v57.358l-9.268-10.79c-3.612-3.612-8.44-3.892-13.081,0c0,0-7.245,5.837-3.831,9.25l33.959,33.959h42.629c4.407,0,8.202-3.111,9.067-7.433l6.819-34.093c0.088-0.438,0.132-0.875,0.156-1.31l0.025-0.015V68.25z" id="hand-rock">
+						</path> 
+						<g class="notes" id="notes"> 
+							<polyline points="49.058,112.498 48.963,91.106 48.988,91.104 57.607,91.009"></polyline> 
+							<circle cx="43.566" cy="112.498" r="5.492"></circle> 
+							<polyline points="58.824,72.314 58.729,50.922 58.754,50.92 76.061,50.872 76.061,79.078"></polyline> 
+							<circle cx="53.332" cy="72.314" r="5.492"></circle> 
+							<circle cx="70.569" cy="79.32" r="5.492"></circle> 
+						</g> 
+					</svg>
+				</button>
+
+				<audio id="myAudio" style="display: none;">
+					<source source="" src="https://audio.jukehost.co.uk/MNGMmg9SoUiD761OawX48vIHDhKdVZJi" /> If you cannot see the audio controls, your browser does not support the audio element
+				</audio>
+			</div>
+		</div>
+	</header>
+
+	<nav id="submenu">
+		<ul class="menu">
+			<li><a class="mmenu active" href="#home" id="mhome" onclick="changeActive('mhome')">Beranda</a></li>
+			<li><a class="mmenu" href="#companies" id="mcompanies" onclick="changeActive('mcompanies')">Perusahaan</a></li>
+			<li><a class="mmenu" href="#peoples" id="mpeoples" onclick="changeActive('mpeoples')">Tentang</a></li>
+			<li><a class="mmenu" href="#contactus" id="mcontactus" onclick="changeActive('mcontactus')">Kontak</a></li>
+		</ul>
+	</nav>
+
+	<menu class="main-body">
+		<div class="papan-landing">
+			<div id="desktop">
+				<p class="landing-text">Ambil rintangan, atau kamu akan kehilangan kesempatan. Jika ada peluang, maka kesempatan kita tidak nol.</p>
+			</div>
+			<div id="mobile">
+				<p class="landing-text">Ambil rintangan, atau kamu akan kehilangan kesempatan.</p>
+			</div>
+		</div>
+		<a aria-label="Go to Companies section" href="#companies">
+			<svg height="100px" width="100px" xmlns="http://www.w3.org/2000/svg">
+				<path d="m23.1 34.1 28.4 27.6L80 34.1l1.5.9-30 29.1-30-29.1 1.6-.9z" fill="#333"></path> 
+			</svg> 
+		</a>
+
+		<div id="companies">
+			<div style="text-align: center; height: 100px;padding-top: 10vh">
+			<h1>Companies</h1>
+		</div>
+
+		<div class="companies">
+			<div class="listcomp">
+				<a href="https://www.qeong.com" target="_blank">
+					<img class="porto" src="https://www.qeong.com/assets/images/qeong_main_logo_v2.png" /> 
+				</a>
+			</div>
+
+			<div class="listcomp">
+				<a href="#">
+					<img class="porto" src="https://i.imgur.com/Ltw2PIY.png" /> 
+				</a>
+			</div>
+		</div>
+		
+
+		<div class="peoples" id="peoples" style="margin-top: 25vh">
+			<h1>Peoples</h1>
+
+			<div class="profilku" style="margin:0;display: flex; position: relative; border: 1px solid white;margin: auto;">
+				<div id="saya" style="border-right: 1px solid white;float: right; align-items: center;">
+					<span>
+						<span style="transform: rotate(90deg);position: absolute;margin-left: 75px;margin-left: -75px; margin-top: 100px;">IMG: PNG, Sep &rsquo;22. Jakarta.</span> 
+						<img src="https://bobbyakyong.com/image0.png" style="width: 200px;background-color: black;margin: 30px;border-bottom: 1px dotted;" /> 
+					</span>
+				</div>
+
+				<div style="padding-bottom: 15px;text-align: left;">
+					<div style="border-bottom: 1px solid white; padding-left: 25px;padding-bottom: 20px; ">
+						<h1 style="margin-bottom: 0px">Bobby Akyong</h1>
+						<span>Founder + CEO Qeong.com</span>
+					</div>
+
+					<div class="ukuranhuruf" style="padding: 25px; text-align: justify-all; line-height: 35px;">
+						<p>Saya adalah seorang mantan programmer, founder, dan pernah bekerja diperusahaan startup B2B. Saya adalah seseorang yang berambisius dan orang yang realitis. Saya akan selalu mencoba untuk mencari solusi dan tidak akan pernah berhenti untuk belajar sesuatu yang baru. Pada saat Cvid-19 melanda Indonesia, semua daerah mengalami Lockdown, saat itulah saya menemukan sebuah ide bisnis dan mengimplementasikan ide bisnis tersebut ke dalam bentuk suatu platform/aplikasi dan saya menamakan Qeong.com. Saya adalah orang yang selalu merasa kekurangan akan pengetahuan dan memiliki mimpi yang besar. Saya berharap mimpi saya dapat tercapai. 
+						</p>
+						<p>
+						Jika kamu adalah Investor atau pengusaha, dan memiliki pertanyaa, jangan sungkan untuk menghubungi saya.</p>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="contactus" id="contactus">
+			<h1>Contact</h1>
+
+			<div class="ukuranhuruf" style="margin: auto; line-height: 35px; max-width: 80%;">
+			<p>Cara tercepat untuk menghubungi saya adalah melalui oang yang saya kenal. Kenalan saya bisa cek di 
+				<a href="https://www.linkedin.com/in/bobbyakyong/">LinkedIn</a> atau orang yang saya <a href="https://twitter.com/bobbyakyong/following">ikuti</a> di Twitter. Jika kita tidak memiliki kenalan yang sama, maka itu tidak menjadi masalah. Anda bisa menghubungi saya melalui media sosial.
+				Saya berbicara tentang teknologi, bisnis (ide bisnis), partner bisnis (kerja sama), atau peluang lainnya yang bisa membantu kita berkembang. Jadi jangan sungkan untuk menghubungi saya.</p>
+			</div>
+		</div>
+	</menu>
+
+	<footer>
+		<div class="footer" style="padding-top: 10vh; font-size: 1.2em; line-height: 2">
+			<div id="connect" style="width: 20%;border: 1px solid white;">
+				<div style="width: 100%;border-bottom: 1px solid white; ">
+					<h3 style="padding-left: 25px;">Hubungi</h3>
+				</div>
+
+				<div style="width: 100%">
+					<ul style="list-style: none; align-items: center; line-height: 2">
+						<li><a href="https://www.instagram.com/akyong_/" target="_blank"><img alt="White Instagram icon" srcset="https://img.icons8.com/material/2x/instagram-new.png 2x" style="filter: invert(100%) sepia(0%) saturate(2%) hue-rotate(256deg) brightness(99%) contrast(103%);" /> Instagram </a></li>
+						<li><a href="https://twitter.com/bobbyakyong" target="_blank"><img alt="White Twitter icon" srcset="https://img.icons8.com/material/2x/twitter--v2.png 2x" style="filter: invert(100%) sepia(4%) saturate(16%) hue-rotate(183deg) brightness(106%) contrast(100%);" /> Twitter </a></li>
+						<li><a href="https://linkedin.com/in/bobbyakyong" target="_blank"><img alt="White LinkedIn icon" srcset="https://img.icons8.com/material/2x/linkedin.png 2x" style="filter: invert(100%) sepia(0%) saturate(0%) hue-rotate(273deg) brightness(106%) contrast(102%);" /> LinkedIn </a></li>
+						<li><a href="https://www.facebook.com/bobbyakyong" target="_blank"><img alt="White Facebook icon" srcset="https://img.icons8.com/material/2x/facebook-new.png 2x" style="filter: invert(100%) sepia(0%) saturate(7460%) hue-rotate(125deg) brightness(108%) contrast(99%);" /> Facebook </a></li>
+						<li id="dekstopmobile"><a onclick="requestDesktopSite()"> <img alt="White iMac icon" srcset="https://img.icons8.com/material-rounded/2x/imac.png 2x" style="filter: invert(94%) sepia(76%) saturate(333%) hue-rotate(250deg) brightness(121%) contrast(100%);" /> Dekstop View </a></li>
+						<li><a href="../index.html">
+							<img alt="White Geography icon" srcset="https://img.icons8.com/material-outlined/2x/geography.png 2x" style="filter: invert(100%) sepia(0%) saturate(7500%) hue-rotate(179deg) brightness(131%) contrast(112%);">
+								English Language </a></li>
+					</ul>
+				</div>
+			</div>
+
+			<div id="sitemap" style="width: 30%;border: 1px solid white;">
+				<div style="width: 100%;border-bottom: 1px solid white;border-left: none; ">
+					<h3 style="padding-left: 25px;">Sitemap</h3>
+				</div>
+
+				<div style="width: 100%">
+					<ul style="list-style: none; align-items: center; line-height: 2;">
+						<li><a href="#mhome">Beranda </a></li>
+						<li><a href="#companies">Perusahaan </a></li>
+						<li><a href="#peoples">Tentang </a></li>
+						<li><a href="#contactus">Kontak </a></li>
+					</ul>
+				</div>
+			</div>
+
+			<div id="colophon" style="width: 50%;border: 1px solid white; border-left: none;">
+				<div style="border-bottom: 1px solid white; padding-left: 25px; ">
+					<h3>Penerbit</h3>
+				</div>
+
+				<div style="width: 100%">
+					<ul style="list-style: none; align-items: center; line-height: 2;">
+						<li>Website di design oleh <a href="https://www.instagram.com/akyong_/" target="_blank"> Bobby Akyong </a></li>
+						<li>DKI Jakarta, Indonesia.</li>
+					</ul>
+
+					<ul style="list-style: none; align-items: center; line-height: 2;">
+						<li>&#9835; Sound&#39;s Artis: &quot;Queen - We Will Rock You&quot; &#9835;</li>
+						<li>All product names, logos, and brands are property of their respective owners.</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+
+		<div style="border: 1px solid white; padding: 20px;text-align: center; font-size: 1.2em;">
+			<marquee style="scrolldelay:90"> &copy; Bobby Akyong. All rights reserved. </marquee>
+		</div>
+	</footer>
+
+	<div id="menu-pop">
+		<div id="menu-body">
+			<button id="close" onclick="toggleMenu()" style="position: absolute;top: 0; right: 0;">x</button>
+
+			<ul id="menu-pop-list">
+				<li><a href="#home" onclick="changeActivePopUp('mhome')">Beranda</a></li>
+				<li><a href="#companies" onclick="changeActivePopUp('mcompanies')">Perusahaan</a></li>
+				<li><a href="#peoples" onclick="changeActivePopUp('mpeoples')">Tentang</a></li>
+				<li><a href="#contactus" onclick="changeActivePopUp('mcontactus')">Kontak</a></li>
+			</ul>
+		</div>
+	</div>
+</body>
+<script src="../script.js"></script>
+</html>
+
