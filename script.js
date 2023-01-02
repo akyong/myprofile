@@ -230,14 +230,14 @@ function rockonbaby() {
 	
 }
 
- window.onload = function refreshTime(){
+window.onload = function refreshTime(){
 
 	var timeDisplay = document.getElementById("time");
 	var dateString = new Date().toLocaleString("en-US", {timeZone: "Asia/Jakarta"});
-  	var formattedString = dateString.replace(", ", " - ");
-  	timeDisplay.innerHTML = formattedString;
-  	 setInterval(refreshTime, 1000);
- } 
+	var formattedString = dateString.replace(", ", " - ");
+	timeDisplay.innerHTML = formattedString;
+	setInterval(refreshTime, 1000);
+} 
 
 	
 
