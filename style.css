@@ -188,6 +188,14 @@ a{
 .porto{
 	max-width: 220px;
 	max-height: 100px;
+	filter: gray; /* IE6-9 */
+  	-webkit-filter: grayscale(1); /* Google Chrome, Safari 6+ & Opera 15+ */
+  	filter: grayscale(1); /* Microsoft Edge and Firefox 35+ */
+}
+
+.porto:hover {
+	-webkit-filter: grayscale(0);
+  	filter: none;
 }
 
 .listcomp{
@@ -195,9 +203,20 @@ a{
 	height: 90px;
 	line-height: 90px;
 	vertical-align: middle;
-	min-width: 200px;
+	min-width: 250px;
 	justify-content: center;
 	align-items: center;
+	padding-top:15px;
+	padding-bottom: 15px;
+}
+
+.listcomp:hover{
+	background-color: #E0E0E0;
+}
+
+.listcomp:hover .porto{	
+	-webkit-filter: grayscale(0);
+  	filter: none;
 }
 
 .peoples{
